@@ -10,7 +10,7 @@ client.on('ready', () => {
 
 
 
-const prefix = "N"
+const prefix = "S"
 
 
 
@@ -73,7 +73,7 @@ client.on('message', function(message) {
 client.on('message', async message => {
             if(!message.channel.guild) return;
 if(message.author.id !== '416643173239226388') return;
-             if (message.content.startsWith("n")) {
+             if (message.content.startsWith("S")) {
 let args = message.content.split(' ').slice(1).join(' ');
             let sigMessage = await args;
             
