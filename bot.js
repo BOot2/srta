@@ -42,14 +42,6 @@ client.on('message', function(message) {
            msg.delete(2000);
           message.delete(2000);
         });
-   } else if(message.content.startsWith(prefix + "not")) {
-				        if(message.author.id !== myID) return;
-            if(!args) return message.reply('اكتب الحالة اللي تريدها.');
-        client.user.set('');
-        message.channel.send(':white_check_mark: Done!').then(msg => {
-           msg.delete(2000);
-          message.delete(2000);
-        });
     } else if(message.content.startsWith(prefix + "listen")) {
 				        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
